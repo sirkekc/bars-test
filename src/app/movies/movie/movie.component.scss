@@ -1,0 +1,56 @@
+.card {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #012345;
+  color: #eff3f6;
+  width: 70%;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+
+  &-container {
+    display: flex;
+    width: 100%;
+  }
+
+  &-poster {
+    min-width: 320px;
+    max-width: 320px;
+    height: 295px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: top;
+    margin-right: 30px;
+  }
+
+  &-title {
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  &-descr {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-year {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-rating {
+    color: yellow;
+  }
+}
+
+.card.card-small {
+  height: 16px;
+  width: 168px;
+}

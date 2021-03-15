@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MoviesMainComponent } from './movies/movies-main.component';
+import { MovieComponent } from './movies/movie/movie.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoviesMainComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "barsGroup-test"
+    }
+  },
+  "defaultProject": "barsGroup-test",
+  "cli": {
+    "analytics": false
+  }
 }

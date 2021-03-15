@@ -1,27 +1,20 @@
 # BarsGroupTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
+Чтобы запустить приложение, используйте `ng serve`.
+Перейдите на страницу `localhost:4200/movie`
 
-## Development server
+1)  Исправьте ошибку, которая выходит при переходе на данную страницу.
+    Сделайте так, чтобы компонент `MovieMainComponent` корректно отображался по данному адресу.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+2) Реализуйте редирект с любого роута на адреc `localhost:4200/movie`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+3) При нажатии на кнопку мыши по карточке фильма, срабатывает alert с названием фильма. При нажатии на название фильма, срабатывает alert с описанием фильма, но после нажатия на ОК также появляется второй alert с названием фильма. Исправьте данное поведение.
+   (При нажатии на карточку только название, при нажатии на название, только описание)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+4) Отсортируйте фильмы по рейтингу.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5) Сделайте рефакторинг 
