@@ -1,8 +1,14 @@
 <div class="card" tabindex="0">
-  <div (click)="alertCall(movie?.movieName)" class="card-container">
+  <div (click)="alertCall($event, movie?.movieName)" class="card-container">
+    <div
+      class="favorite"
+      (click)="toggleFavorite($event)"
+    >
+      {{ movie?.isFavorite ? '★' : '☆' }}
+    </div>
     <img class="card-poster" [src]="movie?.imageSrc">
     <div class="card-descr">
-      <span class="card-title" (click)="alertCall(movie?.descr)">{{ movie?.movieName }}</span>
+      <span class="card-title" (click)="alertCall($event, movie?.descr)">{{ movie?.movieName }}</span>
       <span> Режиссер: {{ movie?.director }}</span>
       <div class="card-year">
         <span>{{ movie?.year }}</span>

@@ -12,6 +12,7 @@
   align-items: center;
   transition: all 0.2s ease-in-out;
   line-height: 24px;
+  position: relative;
 
   &-container {
     display: flex;
@@ -53,4 +54,13 @@
 .card.card-small {
   height: 16px;
   width: 168px;
+}
+
+.favorite {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  font-size: 24px;
+  color: yellow;
+  cursor: pointer;
 }

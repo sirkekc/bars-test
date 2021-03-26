@@ -1,0 +1,8 @@
+<div class="card-container">
+  <div class="no-favorites-msg" *ngIf="(movies$ | async)?.length===0">No Favourites Yet</div>
+  <app-movie
+    *ngFor="let movie of (movies$ | async)"
+    [movie]="movie"
+  >
+  </app-movie>
+</div>

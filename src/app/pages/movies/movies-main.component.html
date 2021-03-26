@@ -1,0 +1,14 @@
+<div class="card-container">
+  <label class="search">
+    Search:
+    <input type="text" [formControl]="searchField">
+  </label>
+
+  <app-movie
+    *ngFor="let movie of filteredMovies"
+    [movie]="movie"
+    (addToFavorite)="addToFavorite(movie.id)"
+    (removeFromFavorite)="removeFromFavorite(movie.id)"
+  >
+  </app-movie>
+</div>

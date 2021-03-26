@@ -1,11 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MoviesMainComponent } from './movies/movies-main.component';
+import { MoviesMainComponent } from './pages/movies/movies-main.component';
+import { MoviesFavoriteComponent } from './pages/favorites/movies-favorite.component';
 
 const routes: Routes = [
   {
     path: 'movie',
     component: MoviesMainComponent
+  },
+  {
+    path: 'favourites',
+    component: MoviesFavoriteComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'movie'
   }
 ];
 
