@@ -1,3 +1,9 @@
-<div class="card-container">
-  <app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
+<div class="movies">
+  <form [formGroup]="searchForm" class="movies__form">
+    <label>
+      Поиск:
+      <input type="text" formControlName="query" class="text-input">
+    </label>
+  </form>  
+  <app-movie *ngFor="let movie of movies | moviefilter: searchForm.get('query').value" [movie]="movie"></app-movie>
 </div>

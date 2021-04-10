@@ -5,16 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MoviesMainComponent } from './movies/movies-main.component';
 import { MovieComponent } from './movies/movie/movie.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MovieFilterPipe } from './movies/movie-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesMainComponent,
-    MovieComponent
+    MovieComponent,
+    MovieFilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    MovieFilterPipe
   ],
   providers: [],
   bootstrap: [AppComponent]

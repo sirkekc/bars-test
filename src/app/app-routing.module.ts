@@ -4,8 +4,17 @@ import { MoviesMainComponent } from './movies/movies-main.component';
 
 const routes: Routes = [
   {
-    path: 'movie',
+    path: 'movies',
     component: MoviesMainComponent
+  },
+  {
+    path: 'favourites',
+    component: MoviesMainComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/movies',
+    pathMatch: 'full'
   }
 ];
 
